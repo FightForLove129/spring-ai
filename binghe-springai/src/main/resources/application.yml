@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    openai:
+      api-key: sk-clrcimexfhbozysgcuvhisotuytuvcpvporxzketaqqvsewt
+      base-url: https://api.siliconflow.cn/
+      embedding:
+        options:
+          model: BAAI/bge-m3
+      chat:
+        options:
+          model: deepseek-ai/DeepSeek-V3
