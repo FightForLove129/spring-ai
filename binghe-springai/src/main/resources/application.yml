@@ -12,3 +12,7 @@ spring:
       chat:
         options:
           model: deepseek-ai/DeepSeek-V3
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: debug
+    com.pain.springai: debug
