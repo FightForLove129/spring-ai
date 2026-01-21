@@ -8,6 +8,7 @@ package com.pain.springai.constant;
 public class Constants {
     public static final String QUESTION_KEY = "question";
     public static final String ANSWER_KEY = "answer";
+    public static final String CONTEXT_KEY = "context";
     /**
      * 简单问答提示模板
      */
