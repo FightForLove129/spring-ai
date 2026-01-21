@@ -23,8 +23,6 @@ public class SimpleAiKnowledgeService {
     @Autowired
     private VectorStore vectorStore;
     @Autowired
-    private PromptTemplate promptTemplate;
-    @Autowired
     private ChatClient chatClient;
 
     public String getAnswer(String question) {

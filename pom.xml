@@ -23,6 +23,7 @@
 	</developers>
     <modules>
         <module>binghe-springai</module>
+        <module>heima-springai</module>
     </modules>
     <scm>
 		<connection/>

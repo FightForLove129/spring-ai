@@ -18,7 +18,7 @@ import java.util.Map;
  * @Author：tdpain
  * @Date: 2026/1/21
  */
-@RequestMapping("/api/simple/ai")
+@RequestMapping("/api/ai")
 @RestController
 public class SimpleAiController {
 
@@ -29,7 +29,7 @@ public class SimpleAiController {
     @Autowired
     private SimpleAiKnowledgeService simpleAiKnowledgeService;
 
-    @PostMapping("/ask")
+    @PostMapping("/simple-ask")
     public Map<String, String> askQuestion(@RequestBody MessageRequest request) {
         String answer = simpleAiQaService.getAnswer(request.getQuestion());
         Map<String, String> response = new HashMap<>();
