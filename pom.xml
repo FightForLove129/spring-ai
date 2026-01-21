@@ -11,7 +11,8 @@
 	<groupId>com.pain</groupId>
 	<artifactId>spring-ai</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-ai</name>
+    <packaging>pom</packaging>
+    <name>spring-ai</name>
 	<description>spring-ai</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,10 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>binghe-springai</module>
+    </modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>

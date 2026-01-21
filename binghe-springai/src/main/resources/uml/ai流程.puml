@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+participant 前端页面 as front
+participant 后端服务 as backend
+participant 硅基流动平台 as guiji
+
+alt ===>>> AI智能问答系统流程 <<<===
+activate front
+front -> backend : 前端调用后端接口发送数据
+activate backend
+backend -> backend : 解析参数，封装AI模型
+backend -> guiji : 调用硅基流动平台接口
+activate guiji
+guiji -> guiji : 根据接收的参数调用不同的大模型
+guiji --> backend : 返回大模型响应的数据
+deactivate guiji
+backend --> front : 返回大模型响应的数据
+deactivate backend
+deactivate front
+end
+@enduml
